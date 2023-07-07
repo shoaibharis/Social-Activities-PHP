@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+nav.navbar{
+    background-color: #016334 !important;
+}
+nav a{
+    color:#fff !important ;
+    font-weight: 600 !important;
+    font-size: 1.5rem;
+    font-family:'Point Panther DEMO','sans-serif';
+    text-decoration:none;
+}
+nav a span{
+    font-family:'Point Panther DEMO','sans-serif';
+    color:#fff;
+    font-size: 2rem;
+    
+}
+nav a span.s{
+    color:lightseagreen;
+}
+nav ul{
+    display:inline-block;
+    justify-content:space-between;
+    background-color:#016334;
+    list-style:none;
+    
+}
+li a{position: relative;}
+li a::after{
+    content: "";
+    width: 20px;
+    height: 10px;
+    position: absolute;
+}
+.carousel-item{
+    height:20% !important;
+}
+.carousel-item h3{
+    color:#039E54;
+    font-family: 'Point Panther DEMO','sans-serif';
+}
+.mini{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+.mini img{
+    /* position: relative; */
+    filter: brightness(50%);
+    transition: all 0.5s;
+}
+.mini img:hover{
+    filter: brightness(100%);
+    cursor: pointer;
+}
+.mini-title{
+    position: absolute;
+    top:90px;
+    left: 70px;
+    color:#fff;
+    transition: all 0.5s;
+}
+.mini:hover .mini-title{
+    top:110px;
+    color: #fff;
+}
+.mini:hover i{
+    top:15px;
+    opacity: 0;
+}
+.mini i{
+    position: absolute;
+    top: 35px;
+    left: 102px;
+    font-size: 2.5em;
+    color: #fff;
+    transition: all 0.5s;
+}
+svg{
+    background-color: transparent;
+    position: absolute;
+    top:50px;
+    
+    color: black;
+    font-size: 20px;
+}
+.sub-title{
+    color: #016334;
+}
+.sub-desc{
+    color:#039E54;
+}
+.card{
+    margin-left: 5em;
+    transition: all 0.5s;
+}
+.card h4,h5{
+    font-family:'Point Panther DEMO','sans-serif';
+    color:#039E54
+}  
+.card p{
+    font-weight: lighter;
+    font-size: 13px;
+    color: gray;
+}
+.card, .card span{
+    border: 2px solid lightgray;
+    padding-top: 4px;
+    
+    transition: all 0.5s;
+}
+.card:hover{
+    border: 2px solid black;
+}
+.card:hover span{
+    border:2px solid black;
+}
+.card:hover i{
+   
+    cursor: pointer;
+}
+.card button{
+    height:35px;
+}
+.card-options:hover .icon-span {
+    background-color: lightseagreen;
+    
+
+}
+.card-options:hover .icon-span i{
+    color:#fff;
+}
+.card-options{
+    transform: translateX(22px);
+}
+.icon-span {
+    width: 60px !important;
+   font-size: 1.2em;
+   position: relative;
+   transition: all 0.2s;
+   cursor: pointer;
+}
+.icon-span i{
+    position: absolute;
+    left: 22px;
+    transition: all 0.2s;
+    color:black;
+}
+.client {
+    width: 100%;
+    height: 100%;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.carousel-icon i {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel-item i {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.t-card {
+  padding: 1.8125rem 1.125rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.25rem;
+  color: #fff;
+  height: auto;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 1.5625rem solid transparent;
+  border-right: 1.5625rem solid transparent;
+  border-top: 1.25rem solid rgba(0, 0, 0, 0.5);
+}
+video,.video-container{
+    position: relative;
+}
+h3.video-title{
+    font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        position: absolute;
+        top: 65%;
+        left: 18%;
+        color: #fff;
+        font-size: 3.5em;
+}
+button.video-button{
+    font-family: 'Raleway', sans-serif;
+    background-color: transparent;
+    
+    font-size: 1.5em;
+    color: #fff;
+    border: 3px solid #FFF;
+    position: absolute;
+    top: 78%;
+    left: 46%;
+    padding: 5px;
+    width: 12%;
+transition: all 0.5s;
+}
+button.video-button:hover{
+
+color: black;
+background-color: #FFF;
+
+}
+.gallery-title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: black;
+     font-size: 3.5em;
+}
+.gallery-container div img{
+    transition: all 0.5s;
+    cursor: pointer;
+    filter: brightness(75%);
+    filter: blur(0.9);
+}
+.gallery-container div:hover img{
+transform: scale(1.2);
+filter: brightness(100%);
+filter: blur(0);
+}
+/* .accordion-title{
+    color: black;
+    font-family: 'Point Panther DEMO';
+}
+.faq-card h6{
+    color:black;
+    font-family: 'Point Panther DEMO';
+}
+.faq-cards{
+    background-color: #37A4E5;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+.faq-card{
+    border-radius:1%;
+   background-color: #37A4E5;
+   height: 80%;
+   transition: all 0.3s;
+}
+.faq-card-text{
+    font-size: 15px;
+    color: gray;
+    font-weight: 600;
+}
+.faq-card div{
+    position: relative;
+    height: 25%;
+   margin: 0;
+}
+.faq-card-button{
+    background-color: transparent;
+    color:#039E54;
+    border:1px solid #016334;
+    transform: translateX(118px);
+    padding: 7px;
+    font-size: 14;
+}
+.faq-card:hover{
+    background-color: #fff;
+    color:#37A4E5;
+    border: 2px solid #fff;
+}
+.faq-card:hover h5, .faq-card:hover p{
+    color:#fff
+}
+.faq-card:hover button{
+    color: #fff;
+    border: 2px solid #fff;
+} */
+.about-us-container{
+    width: 100%;
+    background-color: #37A4E5;
+    height: 60vh;
+    
+}
+.about-us-title{
+    color: black;
+    font-family: 'Point Panther DEMO';
+}
+.about-us-desc{
+    background-color: #37A4E5;
+    border-radius: 3%;
+    width: 800px;
+    height: 200px;
+    transform: translateX(18em);
+    border:2px solid whitesmoke;
+    transition: all 0.5s ;
+    
+}
+.about-us-desc:hover{
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+.about-us-desc p{
+    color: #FFF;
+    font-family: 'Point Panther DEMO';
+    margin: 10px;
+    font-weight: lighter;
+    transition: all 0.5s;
+}
+.about-us-desc:hover p{
+ color:black;   
+}
+.about-us-desc button{
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: 10px;
+    font-family: 'Point Panther DEMO';
+    transform: translateX(20em);
+    transition: all 0.5s;
+}
+.about-us-desc:hover button{
+    background-color: #37A4E5;
+    color: black;
+    border: 2px solid black;
+}
+.about-us-desc button:hover{
+color:white;
+background-color: black;
+}
+.section1,.section2,.section3{
+    height:300px;
+    background-color: #2b2b2b;
+}
+.section1 h4{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.section1 p{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+.section1 span,i{
+    color:#fff;
+}
+.section2 h4{
+    color:#fff;
+}
+.section2 li{
+    list-style:none;
+    color:#fff;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.section2 li a{
+    text-decoration: none;
+    color:#fff;
+}
+.section3 h1{
+    font-family: 'Point Panther DEMO','sans-serif';
+    color:#fff
+}
+.section3 span{
+    color:lightseagreen;
+}
+.section3 h4{
+    font-family: 'Raleway','sans-serif';
+    color:#fff;
+}
+div.social{
+    display: flex;
+}
+div.social i{
+    font-size:2.5em;
+    margin-left:20px;
+    margin-top:20px;
+    cursor:pointer;
+    transition: all 0.3s;
+}
+div.social i:hover{
+    color:gray;
+}
+div.social i.fa-facebook{
+    margin-left:45px !important;
+}

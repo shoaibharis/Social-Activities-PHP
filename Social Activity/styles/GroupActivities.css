@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@600&family=Satisfy&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+nav.navbar{
+    background-color: #016334 !important;
+}
+nav a{
+    color:#fff !important ;
+    font-weight: 600 !important;
+    font-size: 1.5rem;
+    font-family:'Point Panther DEMO','sans-serif';
+    text-decoration:none;
+}
+nav a span{
+    font-family:'Point Panther DEMO','sans-serif';
+    color:#fff;
+    font-size: 2rem;
+    
+}
+nav a span.s{
+    color:lightseagreen;
+}
+nav ul{
+    display:inline-block;
+    justify-content:space-between;
+    background-color:#016334;
+    list-style:none;
+    
+}
+li a{position: relative;}
+li a::after{
+    content: "";
+    width: 20px;
+    height: 10px;
+    position: absolute;
+}
+.title-div{
+    height: 500px;
+    /* background-image: url("assets/images/membership.jpg"); */
+   
+}
+.title-div h1{
+    font-family: 'Point Panther DEMO', cursive;
+    font-size:3.5em;
+    position: absolute;
+    top:32%;
+    left: 32%;
+    color: #fff;
+}
+.title-div img{
+    margin: 0;
+    position: relative;
+    filter: brightness(70%);
+}
+.section1,.section2,.section3{
+    height:300px;
+    background-color: #2b2b2b;
+}
+.section1 h4{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.section1 p{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+}
+.section1 span,i{
+    color:#fff;
+}
+.section2 h4{
+    color:#fff;
+}
+.section2 li{
+    list-style:none;
+    color:#fff;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.section2 li a{
+    text-decoration: none;
+    color:#fff;
+}
+.section3 h1{
+    font-family: 'Point Panther DEMO','sans-serif';
+    color:#fff
+}
+.section3 span{
+    color:lightseagreen;
+}
+.section3 h4{
+    font-family: 'Raleway','sans-serif';
+    color:#fff;
+}
+div.social{
+    display: flex;
+}
+div.social i{
+    font-size:2.5em;
+    margin-left:20px;
+    margin-top:20px;
+    cursor:pointer;
+    transition: all 0.3s;
+}
+div.social i:hover{
+    color:gray;
+}
+div.social i.fa-facebook{
+    margin-left:45px !important;
+}
+
